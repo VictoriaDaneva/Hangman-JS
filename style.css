@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 1000px;
+  background: #4c94ff;
+}
+
+.main {
+  display: flex;
+  width: 950px;
+  gap: 15px;
+  padding: 60px 40px;
+  background: #fff;
+  align-items: flex-end;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.hangman-box img {
+  user-select: none;
+  max-width: 300px;
+}
+
+.hangman-box h1 {
+  text-align: center;
+  font-size: 1.45rem;
+  text-transform: uppercase;
+}
+
+.game-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.word-display {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.word-display .letter {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  width: 25px;
+}
+
+.hint-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.game-box .incorrect-guesses b {
+  color: #f00;
+}
+
+.game-box .alphabet {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.alphabet button {
+  width: calc(100% / 9 - 5px);
+  background: #8fbcff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.alphabet button:hover {
+  background: #c1daff;
+}
